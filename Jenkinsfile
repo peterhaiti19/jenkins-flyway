@@ -1,10 +1,5 @@
 pipeline{
-    agent {
-        docker {
-            image 'boxfuse/flyway:9'
-            args '-v ./db/migration:/flyway/sql --entrypoint=\'\''
-        }
-    }
+    agent any
     stages {
         stage('Verify verssion'){
             steps {
