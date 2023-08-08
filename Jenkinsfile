@@ -1,7 +1,7 @@
 pipeline{
     agent any
     stages {
-        stage('Verify verssion'){
+        stage('Verify version'){
             steps {
                 sh 'docker run --rm flyway/flyway:9 version'
             }
